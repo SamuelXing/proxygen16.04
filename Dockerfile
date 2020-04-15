@@ -86,7 +86,7 @@ RUN cd /home && git clone https://github.com/facebook/wangle && \
     cd /home && rm -rf wangle
 
 # Clone the ProxyGen library
-COPY *.sh /home/
+COPY deps.sh /home/
 RUN cd /home && git clone https://github.com/facebook/proxygen.git && \
     cd proxygen && git checkout d3f694c582b0beea41f1e97e8e33b8a8c4968a81 && \
     cd proxygen && \
