@@ -8,7 +8,7 @@ trap 'cd $start_dir' EXIT
 cd "$(dirname "$0")"
 
 # Install proxygen
-cd ../..
+cd ../
 sudo make uninstall
 sudo make install
 
