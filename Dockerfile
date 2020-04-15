@@ -1,4 +1,5 @@
 FROM ubuntu:16.04
+MAINTAINER SamuelXing
 
 # Some extra dependencies
 RUN apt-get update && \
