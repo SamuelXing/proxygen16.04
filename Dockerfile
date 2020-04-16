@@ -92,7 +92,7 @@ RUN cd /home && git clone https://github.com/facebook/proxygen.git && \
     cd proxygen && \
     cp /home/deps.sh ./ && \
     apt-get update && ./deps.sh -j $(printf %.0f $(echo "$(nproc) * 1.5" | bc -l)) && \
-    cd /home && rm -rf proxygen
+    cd /home && rm -rf proxygen && rm deps.sh
 
 # Tell the linker where to find ProxyGen and friends
 ENV LD_LIBRARY_PATH /usr/local/lib
